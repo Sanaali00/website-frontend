@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, cadetblue, hotpink);
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #3b5998;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4a5fc1;
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-left a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.register-btn {
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.language {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Layout Sections */
+.left-content {
+    flex: 0.7;
+    width: 80%;
+    background: #ffffff;
+    transform : scale(0.9);
+    border-radius: 10px;
+
+}
+
+.right-content {
+    width: 40%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    flex: 0.5;
+}
+
+/* Login Section */
+.login-section {
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 85%;
+    padding: 10px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #357ae8;
+}
+
+/* Categories & Modules */
+.categories,
+.modules {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category, .module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+/* Category Button Colors */
+.category-1 { background: #ff6f61; } /* Red */
+.category-2 { background: #f4a261; } /* Orange */
+.category-3 { background: #2a9d8f; } /* Teal */
+.category-4 { background: #264653; } /* Dark Blue */
+
+/* Module Button Colors */
+.module-1 { background: #4a90e2; } /* Blue */
+.module-2 { background: #9b59b6; } /* Purple */
+.module-3 { background: #e74c3c; } /* Red */
+.module-4 { background: #27ae60; } /* Green */
+
+.category:hover, .module:hover {
+    opacity: 0.8;
+}
+
+/* Icon Styles */
+.icon {
+    font-size: 20px;
+}
